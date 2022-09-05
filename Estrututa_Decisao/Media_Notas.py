@@ -5,5 +5,5 @@ if media<7:
     print('Reprovado')
 elif media>=7 and nota <10:
     print('Aprovado')
-elif media==10:
+elif media>=10:
     print('Aprovado com Distinção')
