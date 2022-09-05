@@ -5,4 +5,4 @@ if numero>numero2:
 elif numero2>numero:
     print('O maior é:',numero2)
 else:
-    print('São iguais')
+    print('São iguais.')

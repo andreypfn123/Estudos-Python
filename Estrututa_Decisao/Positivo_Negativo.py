@@ -3,6 +3,6 @@ from ast import Num
 
 numero=float(input('Digite um número: '))
 if numero >= 0:
-    print('Seu número é positivo.')
+    print('O número é positivo.')
 else:
-    print('Seu número é negativo.')
+    print('O número é negativo.')
