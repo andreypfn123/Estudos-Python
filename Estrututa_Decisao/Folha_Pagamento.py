@@ -1,4 +1,4 @@
-valor_hora=float(input('Quanto recebe por hora: '))
+valor_hora=float(input('Quanto recebe por hora? '))
 mes_hora=float(input('Horas trabalhadas no mês: '))
 salario_bruto=valor_hora*mes_hora
 if salario_bruto <= 900:
