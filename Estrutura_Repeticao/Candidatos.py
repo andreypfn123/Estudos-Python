@@ -1,13 +1,13 @@
 voto=int(input(' João = 1\
-    \n Maria = 2\
-    \n Lucas = 3\
-    \n Carlos = 4\
-    \n Voto Nulo = 5\
-    \n Voto em Branco = 6\
-    \n Para finalizar = 0\
-    \n Digite o número do voto: '))
-while voto==0:
-    voto=int(input('Digite um número válido: '))
+    \nMaria = 2\
+    \nLucas = 3\
+    \nCarlos = 4\
+    \nVoto Nulo = 5\
+    \nVoto em Branco = 6\
+    \nPara finalizar = 0\
+    \nDigite o número do voto: '))
+while voto!=0:
+    voto=int(input('Próximo voto: '))
 candidato1=0
 candidato2=0
 candidato3=0
