@@ -1,29 +1,31 @@
-voto=int(input(' João = 1\
-    \nMaria = 2\
-    \nLucas = 3\
-    \nCarlos = 4\
-    \nVoto Nulo = 5\
-    \nVoto em Branco = 6\
-    \nPara finalizar = 0\
-    \nDigite o número do voto: '))
+possiveis_votos = [1, 2, 3, 4, 5, 6]
+candidatos = ['Ciro Gomes', 'Jair Bolsonaro', 'João Amoedo', 'Lula Molusco', 'Nulo', 'Branco']
+votos=[]
+n_votos=1
+voto = True
 while voto!=0:
-    voto=int(input('Próximo voto: '))
-candidato1=0
-candidato2=0
-candidato3=0
-candidato4=0
-nulo=0
-branco=0
-if voto == 1:
-    candidato1=candidato1+1
-if voto == 2:
-    candidato2=candidato2+1
-if voto == 3:
-    candidato3=candidato3+1
-if voto == 4:
-    candidato4=candidato4+1
-if voto == 5:
-    nulo=nulo+1
-if voto == 6:
-    branco=branco+1
-print(candidato1)
+    print('Voto número', n_votos)
+    voto=int(input('Digite o seu voto: '))
+    if voto == 0:
+        break
+    else:
+        while voto not in possiveis_votos:
+            print('Voto inválido')
+            voto=int(input('Digite o seu voto: '))
+        votos.append(voto)
+    n_votos+=1
+
+contador=0
+for i in range(len(candidatos)):
+    print('Votos para', candidatos[contador], end=': ')
+    if votos.count==0:
+        print('0')
+        contador+=1
+    else:
+        print(votos.count(contador+1))
+        contador+=1
+
+porc_nulo=(votos.count(5)/len(votos))*100
+porc_branco=(votos.count(6)/len(votos))*100
+print(f'Porcentagem Nulos: {porc_nulo:.2f}%\
+    \nPorcentagem Brancos: {porc_branco:.2f}%')
